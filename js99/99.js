@@ -1,14 +1,14 @@
 let html="<tr><th></th>";
 for(let x=1; x<=99; x+=1){
-   html+='<th>';+x+'</th>';
+   html += '<th>'; + x + '</th>';
 }
-html +='</tr>';
+html += '</tr>';
 for(let y=1; y<=99; y+=1){
-    html +='<td>' +X*y+'</td>';
+    html +='<tr><th>' +X*y+'</th>';
     for(let x=1; x<=99; x+=1){
-        html+='<td>'+x*y+'</td>';
+        html += '<td>'+ x*y + '</td>';
     } 
-    html +='</tr>';
+    html += '</tr>';
 }
-let elem =document.querySelector('table');
-elem.innerHTML=html;
+let elem = document.querySelector('table');
+elem.innerHTML = html;

@@ -1,4 +1,4 @@
-let quiz =[
+let quiz = [
     ['犬','dog'],
     ['像','elephant']
     ['情報格差','digital divide']
