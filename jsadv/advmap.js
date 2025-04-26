@@ -16,15 +16,15 @@ document.addEventListener('keyup',(event) => {
         }
     } else if(keyname == 'ArrowRight'){
         if(fname.indexOf('right') > -1){
-        x += 1;
+            x += 1;
         }
     } else if(keyname == 'ArrowUp'){
         if(fname.indexOf('up') > -1){
-        y -= 1;
+            y -= 1;
         }
     }else if(keyname == 'ArrowDown'){
         if(fname.indexOf('down') > -1){
-        y += 1;
+            y += 1;
         }
     }
     showMap();
