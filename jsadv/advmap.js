@@ -1,21 +1,22 @@
-let showMap = () => {
+let showMap = () =>{
     let elem = document.querySelector('div')
     let chip =map[y][x];
     if(chip == 'G' || chip == 'S'){
         elem.innerHTML ='<img src="dav_img/' + images[chip] + '.png">';
     }else if(chip == 'K'){
-    elem.innerHTML = '<ing src="adv_img/key.png">';
-    map[y][x] = '-';
+        elem.innerHTML = '<ing src="adv_img/key.png">';
+        keyflag = true
+        map[y][x] = '-';
     }else if(chip =='D'){   
-        elem.innerHTML = 'img src="adv_img/left_right.png">';
+        elem.innerHTML = 'img src="adv_img/door.png">';
         if(keyflag==true){
             map[y][x] ='-'
-            elem.innerHTML ='<img src="adv_img/left_right.png' + '<img src="adv_img/man.png">';
+            elem.innerHTML ='<img src="adv_img/left_right.png">' + '<img src="adv_img/man.png">';
         }
     }else{
-    elem.innerHTML ='<img src="adv_img/' + '-png"><img src="adv_img/man.png">';
+    elem.innerHTML ='<img src="adv_img/' + images[chip] + '-png"><img src="adv_img/man.png">';
     }
-};
+;
 
 showMap();
 
@@ -41,4 +42,4 @@ document.addEventListener('keyup',(event) => {
         }
     }
     showMap();
-} );
+ );
