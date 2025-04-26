@@ -6,11 +6,11 @@ let showMap = () =>{
     }else if(chip == 'K'){
         elem.innerHTML = '<ing src="adv_img/key.png">';
         keyflag = true
-        map[y][x] = '-';
+        map[y][x] = '─';
     }else if(chip =='D'){   
         elem.innerHTML = '<img src="adv_img/door.png">';
         if(keyflag==true){
-            map[y][x] ='-'
+            map[y][x] ='─'
             elem.innerHTML ='<img src="adv_img/left_right.png">' + '<img src="adv_img/man.png">';
         }
     }else{
