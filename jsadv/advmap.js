@@ -8,5 +8,15 @@ showMap();
 
 document.addEventListener('keyup',(event) => {
     let keyname = event.key;
-    console.log(keyname);
- } );
+    console.log(keyname);    
+    if(keyname == 'ArrowRight'){
+        x -= 1;
+    } else if(keyname == 'ArrowRight'){
+        x += 1;
+    } else if(keyname == 'ArrowUp'){
+        y -= 1;
+    }else if(keyname == 'ArrowDown'){
+        y += 1;
+    }
+    showMap()
+} );
