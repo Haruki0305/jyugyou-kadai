@@ -1,6 +1,6 @@
 let showMap = () =>{
     let elem = document.querySelector('div')
-    let chip =map[y][x];
+    let chip = map[y][x];
     if(chip == 'G' || chip == 'S'){
         elem.innerHTML ='<img src="dav_img/' + images[chip] + '.png">';
     }else if(chip == 'K'){
