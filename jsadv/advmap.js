@@ -27,5 +27,5 @@ document.addEventListener('keyup',(event) => {
         y += 1;
         }
     }
-    showMap()
+    showMap();
 } );
