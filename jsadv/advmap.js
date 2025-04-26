@@ -5,3 +5,8 @@ let showMap = () => {
 };
 
 showMap();
+
+document.addEventListener('keyup',(event) => {
+    let keyname = event.key;
+    console.log(keyname);
+ } );
