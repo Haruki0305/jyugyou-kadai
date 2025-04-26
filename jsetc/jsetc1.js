@@ -7,6 +7,6 @@ btn.addEventLisntener('click',() =>{
          elem.innerText = "＜半角英数字で数字を入れてください＞";
      } else{
          let result = inp.value * 1.10;
-         elem.innerText = Math.roumd(result);
+         elem.innerText = Math.round(result);
      }
 } );
