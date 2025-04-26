@@ -2,9 +2,9 @@ let showMap = () =>{
     let elem = document.querySelector('div')
     let chip = map[y][x];
     if(chip == 'G' || chip == 'S'){
-        elem.innerHTML ='<img src="adv_img/' + images[chip] + '.png">';
+        elem.innerHTML ='<img src="adv_img/' + images[chip] + '.png"><img src="adv_img/man.png">'
     }else if(chip == 'K'){
-        elem.innerHTML = '<ing src="adv_img/key.png">';
+        elem.innerHTML = '<img src="adv_img/key.png">';
         keyflag = true
         map[y][x] = '─';
     }else if(chip =='D'){   
@@ -24,7 +24,7 @@ document.addEventListener('keyup',(event) => {
     let keyname = event.key;
     console.log(keyname);    
    let fname = images[map[y][x]]
-    if(keyname == 'ArrowRight'){
+    if(keyname == 'ArrowLeft'){
         if(fname.indexOf('left') > -1){
         x -= 1;
         }
