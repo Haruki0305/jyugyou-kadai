@@ -7,7 +7,7 @@ let map = [
 ];
 
 let images ={
-    '┐':' left_down',
+    '┐':'left_down',
     '─':'left_right',
     '┬':'left_right_down',
     '┘':'left_up',
