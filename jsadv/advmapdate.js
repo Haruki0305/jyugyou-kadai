@@ -13,8 +13,8 @@ let images ={
     '┘':'left_up',
     '┴':'left_up_right',
     '┤':'left_up_down',
-    '┼':'left_up_ridht_down',
-    '┌':'ridht_down',
+    '┼':'left_up_right_down',
+    '┌':'right_down',
     '│':'up_down',
     '└':'up_right',
     '├':'up_right_down',
@@ -25,6 +25,6 @@ let images ={
 };
 
 let x =2;
-let Y =3;
+let y =3;
 
 let keyflag = false;
