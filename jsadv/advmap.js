@@ -4,17 +4,17 @@ let showMap = () =>{
     if(chip == 'G' || chip == 'S'){
         elem.innerHTML ='<img src="adv_img/' + images[chip] + '.png"><img src="adv_img/man.png">'
     }else if(chip == 'K'){
-        elem.innerHTML = '<img src="adv_img/key.png">';
+        elem.innerHTML = '<img src="adv_img/key.png"><img src="adv_img/man.png">';
         keyflag = true
         map[y][x] = '─';
     }else if(chip =='D'){   
-        elem.innerHTML = '<img src="adv_img/door.png">';
+        elem.innerHTML = '<img src="adv_img/door.png"><img src="adv_img/man.png"></img>';
         if(keyflag==true){
             map[y][x] ='─'
             elem.innerHTML ='<img src="adv_img/left_right.png">' + '<img src="adv_img/man.png">';
         }
     }else{
-    elem.innerHTML ='<img src="adv_img/' + images[chip] + '-png"><img src="adv_img/man.png">';
+    elem.innerHTML ='<img src="adv_img/' + images[chip] + '.png"><img src="adv_img/man.png">';
     }
 };
 
