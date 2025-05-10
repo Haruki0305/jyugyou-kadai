@@ -7,12 +7,12 @@ btn.addEventListener('click',() => {
 
     for(i=0 ; i<10 ; i+=1 ){
         mes += 150;
-        elem.innerText += "→" + mes;
+        elem.innerText += " → " + mes;
     }
     /*
     while(mes<10000){
         mes += 150;
-        elem.innerText += "→" + mes;
+        elem.innerText += " → " + mes;
     }
     */       
 });
